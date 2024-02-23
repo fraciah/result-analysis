@@ -4,7 +4,7 @@ export const students = {
             "id": 1,
             "fName": "Tally",
             "oNames": "Grodden",
-            "gender": "Genderfluid",
+            "gender": "Male",
             "admnNo": 303,
             "term1_scores": {
             "math": 64,
@@ -424,7 +424,7 @@ export const students = {
             "id": 13,
             "fName": "Hamnet",
             "oNames": "Kleint",
-            "gender": "Bigender",
+            "gender": "Male",
             "admnNo": 635,
             "term1_scores": {
             "math": 51,
@@ -634,7 +634,7 @@ export const students = {
             "id": 19,
             "fName": "Nova",
             "oNames": "Newcombe",
-            "gender": "Female",
+            "gender": "Male",
             "admnNo": 888,
             "term1_scores": {
                 "math": 78,
@@ -669,7 +669,7 @@ export const students = {
             "id": 20,
             "fName": "Zara",
             "oNames": "Zabarte",
-            "gender": "Female",
+            "gender": "Male",
             "admnNo": 123,
             "term1_scores": {
                 "math": 85,
@@ -844,7 +844,7 @@ export const students = {
             "id": 25,
             "fName": "Cara",
             "oNames": "Carron",
-            "gender": "Female",
+            "gender": "Male",
             "admnNo": 278,
             "term1_scores": {
                 "math": 79,
