@@ -1,7 +1,9 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from "chart.js";
 import { Pie, Bar } from 'react-chartjs-2';
-import { genderData, term1AvgData, term2AvgData } from "../utils/Data/Visuals";
 import { useState } from "react";
+
+import { genderData } from "../utils/Visuals/Gender";
+import { term1AvgData, term2AvgData, term3AvgData, term4AvgData } from "../utils/Visuals/TermScores";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
@@ -9,6 +11,8 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 const termData = {
   1: term1AvgData,
   2: term2AvgData,
+  3: term3AvgData,
+  4: term4AvgData,
 }
 
 const Home = () => {
@@ -43,4 +47,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
