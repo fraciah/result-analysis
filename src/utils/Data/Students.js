@@ -6,6 +6,9 @@ export const students = {
             "oNames": "Grodden",
             "gender": "Male",
             "admnNo": 303,
+            "p_contact": "0700000000",
+            "p_email": "tally@gmail.com",
+            "address": "123, Nairobi",
             "term1_scores": {
             "math": 64,
             "english": 42,
@@ -41,6 +44,9 @@ export const students = {
             "oNames": "Adicot",
             "gender": "Female",
             "admnNo": 127,
+            "p_contact": "0700000001",
+            "p_email": "kyla@gmail.com",
+            "address": "124, Nairobi",
             "term1_scores": {
             "math": 59,
             "english": 94,
@@ -76,6 +82,9 @@ export const students = {
             "oNames": "Twiggs",
             "gender": "Female",
             "admnNo": 784,
+            "p_contact": "0700000002",
+            "p_email": "adara@gmail.com",
+            "address": "125, Kileleshwa",
             "term1_scores": {
             "math": 88,
             "english": 71,
@@ -111,6 +120,9 @@ export const students = {
             "oNames": "Brisley",
             "gender": "Female",
             "admnNo": 87,
+            "p_contact": "0700000003",
+            "p_email": "zora@gmail.com",
+            "address": "126 Karen",
             "term1_scores": {
             "math": 18,
             "english": 46,
@@ -146,6 +158,9 @@ export const students = {
             "oNames": "Clementi",
             "gender": "Male",
             "admnNo": 996,
+            "p_contact": "0700000004",
+            "p_email": "zackariah@gmail.com",
+            "address": "127 Kijabe",
             "term1_scores": {
             "math": 87,
             "english": 50,
@@ -181,6 +196,9 @@ export const students = {
             "oNames": "Hastin",
             "gender": "Male",
             "admnNo": 582,
+            "p_contact": "0700000005",
+            "p_email": "tobias@gmail.com",
+            "address": "128 Kahawa",
             "term1_scores": {
             "math": 76,
             "english": 78,
@@ -216,6 +234,9 @@ export const students = {
             "oNames": "O'Hartnedy",
             "gender": "Female",
             "admnNo": 527,
+            "p_contact": "0700000006",
+            "p_email": "gabriell@gmail.com",
+            "address": "129 Ruiru",
             "term1_scores": {
             "math": 21,
             "english": 47,
@@ -251,6 +272,9 @@ export const students = {
             "oNames": "Kordovani",
             "gender": "Male",
             "admnNo": 188,
+            "p_contact": "0700000007",
+            "p_email": "burl@gmail.com",
+            "address": "130 Githurai",
             "term1_scores": {
             "math": 26,
             "english": 83,
@@ -286,6 +310,9 @@ export const students = {
             "oNames": "Dellenbroker",
             "gender": "Male",
             "admnNo": 125,
+            "p_contact": "0700000008",
+            "p_email": "blake@gmail.com",
+            "address": "131 Bypass",
             "term1_scores": {
             "math": 93,
             "english": 62,
@@ -321,6 +348,9 @@ export const students = {
             "oNames": "Benedito",
             "gender": "Female",
             "admnNo": 921,
+            "p_contact": "0700000009",
+            "p_email": "eve@gmail.com",
+            "address": "132 Malindi",
             "term1_scores": {
             "math": 47,
             "english": 82,
@@ -356,6 +386,9 @@ export const students = {
             "oNames": "Sowte",
             "gender": "Female",
             "admnNo": 684,
+            "p_contact": "0700000010",
+            "p_email": "neile@gmail.com",
+            "address": "133 Malindi",
             "term1_scores": {
             "math": 94,
             "english": 83,
@@ -391,6 +424,9 @@ export const students = {
             "oNames": "Pfeffle",
             "gender": "Male",
             "admnNo": 833,
+            "p_contact": "0700000011",
+            "p_email": "dunc@gmail.com",
+            "address": "134 Moyale",
             "term1_scores": {
             "math": 70,
             "english": 0,
@@ -426,6 +462,9 @@ export const students = {
             "oNames": "Kleint",
             "gender": "Male",
             "admnNo": 635,
+            "p_contact": "0700000012",
+            "p_email": "hamnet@gmail.com",
+            "address": "135 Elburgon",
             "term1_scores": {
             "math": 51,
             "english": 82,
@@ -461,6 +500,9 @@ export const students = {
             "oNames": "Wynch",
             "gender": "Male",
             "admnNo": 823,
+            "p_contact": "0700000013",
+            "p_email": "shaughn@gmail.com",
+            "address": "136 Westlands",
             "term1_scores": {
             "math": 92,
             "english": 95,
@@ -496,6 +538,9 @@ export const students = {
             "oNames": "Arkcoll",
             "gender": "Male",
             "admnNo": 995,
+            "p_contact": "0700000014",
+            "p_email": "sebastien@gmail.com",
+            "address": "137 Kangemi",
             "term1_scores": {
             "math": 48,
             "english": 61,
@@ -531,6 +576,9 @@ export const students = {
             "oNames": "Walklate",
             "gender": "Male",
             "admnNo": 419,
+            "p_contact": "0700000015",
+            "p_email": "wilek@gmail.com",
+            "address": "138 Kikuyu",
             "term1_scores": {
             "math": 55,
             "english": 73,
@@ -566,6 +614,9 @@ export const students = {
             "oNames": "Orrey",
             "gender": "Male",
             "admnNo": 755,
+            "p_contact": "0700000016",
+            "p_email": "aksel@gmail.com",
+            "address": "139 Buruburu",
             "term1_scores": {
             "math": 37,
             "english": 77,
@@ -601,6 +652,9 @@ export const students = {
             "oNames": "Dollin",
             "gender": "Male",
             "admnNo": 622,
+            "p_contact": "0700000017",
+            "p_email": "dax@gmail.com",
+            "address": "140 Umoja",
             "term1_scores": {
                 "math": 89,
                 "english": 62,
@@ -636,6 +690,9 @@ export const students = {
             "oNames": "Newcombe",
             "gender": "Male",
             "admnNo": 888,
+            "p_contact": "0700000018",
+            "p_email": "nova@gmail.com",
+            "address": "141 South C",
             "term1_scores": {
                 "math": 78,
                 "english": 84,
@@ -671,6 +728,9 @@ export const students = {
             "oNames": "Zabarte",
             "gender": "Male",
             "admnNo": 123,
+            "p_contact": "0700000019",
+            "p_email": "zaraz@gmail.com",
+            "address": "142 South B",
             "term1_scores": {
                 "math": 85,
                 "english": 77,
@@ -706,6 +766,9 @@ export const students = {
             "oNames": "Kaleel",
             "gender": "Male",
             "admnNo": 334,
+            "p_contact": "0700000020",
+            "p_email": "kai@gmail.com",
+            "address": "143 Malindi",
             "term1_scores": {
                 "math": 93,
                 "english": 68,
@@ -741,6 +804,9 @@ export const students = {
             "oNames": "Laird",
             "gender": "Female",
             "admnNo": 976,
+            "p_contact": "0700000021",
+            "p_email": "lia@gmail.com",
+            "address": "144 Makadara",
             "term1_scores": {
                 "math": 67,
                 "english": 79,
@@ -776,6 +842,9 @@ export const students = {
             "oNames": "Edmundson",
             "gender": "Male",
             "admnNo": 521,
+            "p_contact": "0700000022",
+            "p_email": "eli@gmail.com",
+            "address": "145 Parklands",
             "term1_scores": {
                 "math": 82,
                 "english": 71,
@@ -811,6 +880,9 @@ export const students = {
             "oNames": "Mackerness",
             "gender": "Female",
             "admnNo": 834,
+            "p_contact": "0700000023",
+            "p_email": "mila@gmail.com",
+            "address": "146 Huruma",
             "term1_scores": {
                 "math": 76,
                 "english": 82,
@@ -846,6 +918,9 @@ export const students = {
             "oNames": "Carron",
             "gender": "Male",
             "admnNo": 278,
+            "p_contact": "0700000024",
+            "p_email": "cara@gmail.com",
+            "address": "147 Thika",
             "term1_scores": {
                 "math": 79,
                 "english": 86,
@@ -881,6 +956,9 @@ export const students = {
             "oNames": "Kermode",
             "gender": "Male",
             "admnNo": 195,
+            "p_contact": "0700000025",
+            "p_email": "kian@gmail.com",
+            "address": "148 Ruaka",
             "term1_scores": {
                 "math": 84,
                 "english": 75,
@@ -916,6 +994,9 @@ export const students = {
             "oNames": "Zakarian",
             "gender": "Female",
             "admnNo": 609,
+            "p_contact": "0700000026",
+            "p_email": "kian@gmail.com",
+            "address": "149 Ruai",
             "term1_scores": {
                 "math": 80,
                 "english": 87,
@@ -951,6 +1032,9 @@ export const students = {
             "oNames": "Nolan",
             "gender": "Female",
             "admnNo": 632,
+            "p_contact": "0700000027",
+            "p_email": "nora@gmail.com",
+            "address": "150 Pipeline",
             "term1_scores": {
                 "math": 85,
                 "english": 79,
@@ -986,6 +1070,9 @@ export const students = {
             "oNames": "Ellis",
             "gender": "Male",
             "admnNo": 934,
+            "p_contact": "0700000028",
+            "p_email": "ethan@gmail.com",
+            "address": "151 Langata",
             "term1_scores": {
                 "math": 80,
                 "english": 78,
@@ -1021,6 +1108,9 @@ export const students = {
             "oNames": "Olsen",
             "gender": "Female",
             "admnNo": 812,
+            "p_contact": "0700000029",
+            "p_email": "olivia@gmail.com",
+            "address": "152 Pangani",
             "term1_scores": {
                 "math": 79,
                 "english": 77,
