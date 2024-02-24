@@ -1,12 +1,14 @@
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from "chart.js";
-import { Pie, Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, BarElement, CategoryScale, LinearScale, LineElement, PointElement } from "chart.js";
+import { Pie, Bar, Line } from 'react-chartjs-2';
 import { useState } from "react";
 
 import { genderData } from "../utils/Visuals/Gender";
 import { term1AvgData, term2AvgData, term3AvgData, term4AvgData } from "../utils/Visuals/TermScores";
+import { subjects, getLineChartData, lineChartOptions }from "../utils/Visuals/SubjectAvgs";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
+ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
 const termData = {
   1: term1AvgData,
@@ -41,6 +43,12 @@ const Home = () => {
           </select>
         </div>
         <Bar data={termData[selectedTerm]}></Bar>
+      </div>
+
+      <div>
+        {subjects.map(subject => {
+          return <Line key={subject} data={getLineChartData(subject)} options={lineChartOptions} />;
+        })}
       </div>
 
     </div>
