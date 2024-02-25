@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Bar, Pie } from "react-chartjs-2";
+import { Bar, Pie, Line } from "react-chartjs-2";
 
 import { students } from "../utils/Data/Students";
 import { studentTermScores, options } from "../utils/Visuals/StudentBarChart";
 import { getTermScores } from "../utils/Visuals/StudentPieChart";
+import { getSubjectScores, subjects, studentLineOptions } from "../utils/Visuals/StudentLineChart";
+
 
 const Student = () => {
   const urlParams = useParams();
@@ -53,6 +55,14 @@ const Student = () => {
         </div>
       </div>
       <Pie data={pieData} />
+
+      <div>
+        {subjects.map(subject => (
+          <div key={subject}>
+            <Line data={getSubjectScores(student, subject)} options={studentLineOptions}/>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
