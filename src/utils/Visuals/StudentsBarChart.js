@@ -48,6 +48,14 @@ const visualTermsAvg = (term, avgScores) => {
         ]
     }
 }
+export const options={
+    scales: {
+      y: {
+        min: 0,
+        max: 100
+      }
+    }
+}
 
 //export each average score
 export const term1AvgData = visualTermsAvg('1', term1AvgScores);
