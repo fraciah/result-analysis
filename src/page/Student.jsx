@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Bar } from "react-chartjs-2";
+import { Bar, Pie } from "react-chartjs-2";
 
 import { students } from "../utils/Data/Students";
-import { studentTermScores, options } from "../utils/Visuals/StudentTermScores";
+import { studentTermScores, options } from "../utils/Visuals/StudentBarChart";
+import { getTermScores } from "../utils/Visuals/StudentPieChart";
 
 const Student = () => {
   const urlParams = useParams();
@@ -18,7 +19,10 @@ const Student = () => {
   );
   // console.log(student);
   const [selectedSubject, setSelectedSubject] = useState("math");
-  const data = studentTermScores(student, selectedSubject);
+  const [selectedTerm, setSelectedTerm] = useState("term1_scores");
+  
+  const barData = studentTermScores(student, selectedSubject);
+  const pieData = getTermScores(student, selectedTerm);
 
   return (
     <div>
@@ -35,7 +39,20 @@ const Student = () => {
           </select>
         </div>
       </div>
-      <Bar data={data} options={options}/>
+      <Bar data={barData} options={options}/>
+
+      <div className="form-group row align-items-center">
+        <label className="col-sm-2 col-form-label">Select term:</label>
+        <div className="col-sm-2">
+          <select className="form-select" value={selectedTerm} onChange={(e) => setSelectedTerm(e.target.value)}>
+            <option value="term1_scores">Term 1</option>
+            <option value="term2_scores">Term 2</option>
+            <option value="term3_scores">Term 3</option>
+            <option value="term4_scores">Term 4</option>
+          </select>
+        </div>
+      </div>
+      <Pie data={pieData} />
     </div>
   )
 }
