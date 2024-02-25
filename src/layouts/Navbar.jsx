@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import "./styles.css";
+import "./layout.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
   
 
   return (
-    <nav className={`navbar sticky-top navbar-expand-lg bg-white py-1 ${scrolled ? 'scrolled-navbar' : ''}`}>
+    <nav className={`navbar sticky-top navbar-expand-lg bg-white py-1 border-bottom ${scrolled ? 'scrolled-navbar' : ''}`}>
       <div className="container-fluid">
         <div className="logo-container">
           <img src={logo} className="img-fluid" alt="logo"/>

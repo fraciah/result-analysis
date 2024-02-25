@@ -9,7 +9,7 @@ const Students = () => {
   };
 
   return (
-    <div>
+    <div className="table-responsive">
       <table className="table">
         <thead>
           <tr>
@@ -43,4 +43,4 @@ const Students = () => {
   )
 }
 
-export default Students
+export default Students;
