@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Bar, Pie, Line } from "react-chartjs-2";
+import { TbGenderBigender } from "react-icons/tb";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 
 import { students } from "../utils/Data/Students";
 import { studentTermScores, options } from "../utils/Visuals/StudentBarChart";
@@ -19,7 +23,7 @@ const Student = () => {
   const student = students?.students?.find(
     (student) => student.id == studentId
   );
-  // console.log(student);
+  console.log(student);
   const [selectedSubject, setSelectedSubject] = useState("math");
   const [selectedTerm, setSelectedTerm] = useState("term1_scores");
   
@@ -27,41 +31,93 @@ const Student = () => {
   const pieData = getTermScores(student, selectedTerm);
 
   return (
-    <div>
-      <p>Student data to be here</p>
-      <div className="form-group row align-items-center">
-        <label className="col-sm-2 col-form-label">Select subject:</label>
-        <div className="col-sm-2">
-          <select className="form-select"  value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)}>
+    <div className="container">
+      <div className="row">
+        <div className="col">
+          <div className="card">
+            
+            <div className="card-body">
+              <div className="d-flex align-items-center">
+                <div className="rounded-circle bg-primary d-flex justify-content-center align-items-center fw-bold" style={{width: '50px', height: '50px'}}>
+                  {student.fName.charAt(0).toUpperCase() + student.oNames.charAt(0).toLowerCase()}
+                </div>
+                <div className="ms-3">
+                  <small className="card-text">Admission No: {student.admnNo}</small>
+                  <h5 className="card-title mb-0">{student.fName + " " + student.oNames}</h5>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <div className="row row-cols-1 row-cols-md-4 gap-2">
+                  <div className="col-lg-3 p-2 border border-primary d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-2">
+                      <TbGenderBigender className="fs-5"/>
+                      <p className="mb-0">Gender</p>
+                    </div>
+                    <span>{student.gender}</span> 
+                  </div>
+                  <div className="col-lg-3 p-2 border border-primary d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-2">
+                      <FaPhone className="fs-5"/>
+                      <p className="mb-0">Parent</p>
+                    </div>
+                    <span>{student.p_contact}</span> 
+                  </div>
+                  <div className="col-lg-3 p-2 border border-primary d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-2">
+                      <MdEmail className="fs-5"/>
+                      <p className="mb-0">Parent</p>
+                    </div>
+                    <span>{student.p_email}</span> 
+                  </div>
+                  <div className="col-lg-3 p-2 border border-primary d-flex justify-content-between align-items-center">
+                    <div className="d-flex align-items-center gap-2">
+                      <CiLocationOn className="fs-5"/>
+                      <p className="mb-0">Address</p>
+                    </div>
+                    <p className="mb-0">{student.address}</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div className="row mt-3">
+        <div className="col">
+          <label>Select subject:</label>
+          <select className="form-select" value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)}>
             <option value="math">Math</option>
             <option value="english">English</option>
             <option value="history">History</option>
             <option value="chemistry">Chemistry</option>
             <option value="physics">Physics</option>
           </select>
+          <Bar data={barData} options={options}/>
         </div>
       </div>
-      <Bar data={barData} options={options}/>
-
-      <div className="form-group row align-items-center">
-        <label className="col-sm-2 col-form-label">Select term:</label>
-        <div className="col-sm-2">
+      <div className="row mt-3">
+        <div className="col">
+          <label>Select term:</label>
           <select className="form-select" value={selectedTerm} onChange={(e) => setSelectedTerm(e.target.value)}>
             <option value="term1_scores">Term 1</option>
             <option value="term2_scores">Term 2</option>
             <option value="term3_scores">Term 3</option>
             <option value="term4_scores">Term 4</option>
           </select>
+          <Pie data={pieData} />
         </div>
       </div>
-      <Pie data={pieData} />
-
-      <div>
-        {subjects.map(subject => (
-          <div key={subject}>
-            <Line data={getSubjectScores(student, subject)} options={studentLineOptions}/>
-          </div>
-        ))}
+      <div className="row mt-3">
+        <div className="col">
+          {subjects.map(subject => (
+            <div key={subject}>
+              <h3>{subject}</h3>
+              <Line data={getSubjectScores(student, subject)} options={studentLineOptions}/>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
