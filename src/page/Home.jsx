@@ -5,6 +5,7 @@ import { useState } from "react";
 import { genderData } from "../utils/Visuals/StudentsPieChart";
 import { term1AvgData, term2AvgData, term3AvgData, term4AvgData, options } from "../utils/Visuals/StudentsBarChart";
 import { subjects, getLineChartData, lineChartOptions }from "../utils/Visuals/StudentsLineChart";
+import "./page.css";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
@@ -25,46 +26,57 @@ const Home = () => {
   }
   
   return (
-    <div className="d-flex flex-column align-items-center">
-      <p>Grade 8 Analysis Dashbord</p>
-      <p>
-        Welcome to Grade 8 analysis. This platform provides a comprehensive view of student performance. Here, you can explore various charts that depict the overall performance of all Grade 8 students. Use the dropdown menu to select the term for which you want to view the average scores.
-      </p> 
-      <p>
-        If you&apos;re interested in more detailed data, you can select a specific student and view their performance data, including term-by-term scores and subject-wise averages. 
-      </p>
-      <p>
-        We encourage you to explore the data and gain insights into student performance. Enjoy your exploration!
-      </p>
-      <div>
-        <div className="d-flex justify-content-between p-4">
-          <div className="col-6" style={{ maxWidth: '400px', maxHeight: '400px' }}>
+    <div className="container">
+      <p className="fw-bold blue fs-3 text-center">Grade 8 Analysis Dashboard</p>
+      <div className="text-center px-4">
+        <p>
+          Welcome to Grade 8 analysis. This platform provides a comprehensive view of student performance. Here, you can explore various charts that depict the overall performance of all Grade 8 students. Use the dropdown menu to select the term for which you want to view the average scores.
+        </p> 
+        <p>
+          If you&apos;re interested in more detailed data, you can select a specific student and view their performance data, including term-by-term scores and subject-wise averages. 
+        </p>
+        <p>
+          We encourage you to explore the data and gain insights into student performance. Enjoy your exploration!
+        </p>
+      </div>
+      <div className="d-flex flex-column gap-5">
+        <div className="row my-5">
+          <div className="col-lg-6 col-md-12 chart-container">
+            <h5 className="text-center mb-4">Gender Distribution</h5>
+            <div className="col-12 col-md-10 col-lg-8 mx-auto"> 
             <Pie data={genderData} />
           </div>
-          <div className="col-6"> 
-            <div className="d-flex align-items-center">
-              <label className="me-2">Select term:</label>
-              <select value={selectedTerm} className="form-select w-25" onChange={handleTermChange}>
-                <option value={1}>Term 1</option>
-                <option value={2}>Term 2</option>
-                <option value={3}>Term 3</option>
-                <option value={4}>Term 4</option>
-              </select>
+          </div>
+          <div className="col-lg-6 col-md-12"> 
+            <div className="align-items-center">
+              <h5 className="text-center mb-4">Average Scores by Term</h5>
+              <div className="d-flex align-items-center justify-content-center mb-2">
+                <label className="me-2">Select term:</label>
+                <select value={selectedTerm} className="form-select w-25" onChange={handleTermChange}>
+                  <option value={1}>Term 1</option>
+                  <option value={2}>Term 2</option>
+                  <option value={3}>Term 3</option>
+                  <option value={4}>Term 4</option>
+                </select>
+              </div>
             </div>
-            <div style={{ maxWidth: '600px', maxHeight: '300px' }}>
+            <div className="chart-container">
               <Bar data={termData[selectedTerm]} options={options}></Bar>
             </div>
           </div>
         </div>
 
-        <div className="d-flex flex-wrap">
-        {subjects.map(subject => {
-          return (
-              <div key={subject} className="col-md-6 col-lg-4">
-                <Line key={subject} data={getLineChartData(subject)} options={lineChartOptions} />
-              </div>
-            );
-          })}
+        <div>
+          <h5 className="text-center mb-4">Subject Score Progression Over Terms</h5>
+          <div className="row">
+            {subjects.map(subject => {
+              return (
+                  <div key={subject} className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <Line key={subject} data={getLineChartData(subject)} options={lineChartOptions} />
+                  </div>
+                );
+              })}
+          </div>
         </div>
       </div>
     </div>

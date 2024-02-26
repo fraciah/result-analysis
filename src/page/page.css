@@ -1,0 +1,35 @@
+.blue {
+    color: #36A2EB;
+}
+
+.pink {
+    color: #FF6384;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) { 
+.chart-container {
+    max-height: 200px;
+}
+}
+
+@media (min-width: 576px) { 
+    .chart-container {
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .chart-container {
+        max-height: 400px;
+    }
+}
+  
