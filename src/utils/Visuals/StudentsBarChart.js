@@ -41,8 +41,8 @@ const visualTermsAvg = (term, avgScores) => {
             {
                 label: `Average Scores for Term ${term}`,
                 data: Object.values(avgScores),
-                backgroundColor: 'pink',
-                borderColor: 'black',
+                backgroundColor: '#FF6384',
+                borderColor: 'gray',
                 borderWidth: 1,
             }
         ]

@@ -30,7 +30,7 @@ export const getLineChartData = (subject) => {
     return {
       labels: ['Term 1', 'Term 2', 'Term 3', 'Term 4'],
       datasets: [{
-        label: subject,
+        label: subject.charAt(0).toUpperCase() + subject.slice(1),
         data: terms.map(term => averages[subject][term]),
         fill: false,
         borderColor: '#36A2EB',
