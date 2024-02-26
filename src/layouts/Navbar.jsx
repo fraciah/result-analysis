@@ -5,6 +5,7 @@ import "./layout.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [ isOpen, setIsOpen ] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,19 +29,19 @@ const Navbar = () => {
         <div className="logo-container">
           <img src={logo} className="img-fluid" alt="logo"/>
         </div>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button style={{border:'none', outline: 'none', boxShadow: 'none'}} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={isOpen} aria-label="Toggle navigation" onClick={() => setIsOpen(!isOpen)}>
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link to="/" className="nav-link me-4 fw-semibold">Home</Link>
+              <Link to="/" className="nav-link me-4 fw-semibold" onClick={() => setIsOpen(false)}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/students" className="nav-link me-4 fw-semibold">Students</Link>
+              <Link to="/students" className="nav-link me-4 fw-semibold" onClick={() => setIsOpen(false)}>Students</Link>
             </li>
             <li className="nav-item">
-              <Link to="/teachers" className="nav-link me-4 fw-semibold">Teachers</Link>
+              <Link to="/teachers" className="nav-link me-4 fw-semibold" onClick={() => setIsOpen(false)}>Teachers</Link>
             </li>
           </ul>
         </div>
