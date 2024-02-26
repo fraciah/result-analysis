@@ -21,6 +21,14 @@
     align-items: center;
 }
 
+.bg {
+    background-color: #36A2EB;
+    /* background-color: #F5F5F5; */
+}
+
+.border-item {
+    border: 1px solid #36A2EB;
+} 
 
 @media (max-width: 576px) { 
     .chart-container {

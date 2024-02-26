@@ -14,7 +14,7 @@ export const studentTermScores = (student, selectedSubject) => {
             {
                 label: `Performance in ${selectedSubject.charAt(0).toUpperCase() + selectedSubject.slice(1)}`,
                 data: getStudentScoresBySubject(student, selectedSubject),
-                backgroundColor: 'pink',
+                backgroundColor: '#FF6384',
                 borderColor: 'black',
                 borderWidth: 1,
             }
@@ -28,5 +28,6 @@ export const options={
         min: 0,
         max: 100
       }
-    }
+    },
+    maintainAspectRatio: false,
 }

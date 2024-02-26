@@ -3,6 +3,10 @@
     color: #36A2EB;
 }
 
+.gray { 
+    color: #F5F5F5;
+}
+
 .scrolled-navbar {
   background-color: #fff;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
