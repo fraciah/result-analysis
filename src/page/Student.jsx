@@ -79,7 +79,7 @@ const Student = () => {
         <div className="row my-5">
           <div className="col-lg-6 col-md-12 chart-container">
             <div className="align-items-center">
-              <h5 className="text-center mb-4">Subject Scores per Term</h5>
+              <h5 className="text-center my-3">Subject Scores per Term</h5>
               <div className="d-flex align-items-center justify-content-center mb-2">
                 <label className="me-2">Select subject:</label>
                 <select className="form-select w-50" value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)}>
@@ -96,9 +96,9 @@ const Student = () => {
             </div>
           </div>
 
-          <div className="col-lg-6 col-md-12 chart-container">
+          <div className="col-lg-6 col-md-12 chart-container mt-5 mt-lg-0">
             <div className="align-items-center">
-              <h5 className="text-center mb-4">Scores per Term</h5>
+              <h5 className="text-center my-3">Scores per Term</h5>
               <div className="d-flex align-items-center justify-content-center mb-2">
                 <label className="me-2">Select term:</label>
                 <select className="form-select w-50" value={selectedTerm} onChange={(e) => setSelectedTerm(e.target.value)}>

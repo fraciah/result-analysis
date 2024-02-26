@@ -1,8 +1,7 @@
-
 const Teachers = () => {
   return (
     <div>
-<p>teachers</p>
+      <p>UNDER CONSTRUCTION</p>
     </div>
   )
 }
