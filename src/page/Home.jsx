@@ -52,7 +52,7 @@ const Home = () => {
               <h5 className="text-center mb-4">Average Scores by Term</h5>
               <div className="d-flex align-items-center justify-content-center mb-2">
                 <label className="me-2">Select term:</label>
-                <select value={selectedTerm} className="form-select w-25" onChange={handleTermChange}>
+                <select value={selectedTerm} className="form-select w-50" onChange={handleTermChange}>
                   <option value={1}>Term 1</option>
                   <option value={2}>Term 2</option>
                   <option value={3}>Term 3</option>
