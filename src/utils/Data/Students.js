@@ -20,18 +20,18 @@ export const students = {
             "math": 51,
             "english": 61,
             "history": 77,
-            "chemistry": 0,
+            "chemistry": 20,
             "physics": 72
             },
             "term3_scores": {
             "math": 85,
             "english": 41,
             "history": 57,
-            "chemistry": 6,
+            "chemistry": 16,
             "physics": 51
             },
             "term4_scores": {
-            "math": 2,
+            "math": 52,
             "english": 70,
             "history": 83,
             "chemistry": 55,
@@ -51,28 +51,28 @@ export const students = {
             "math": 59,
             "english": 94,
             "history": 87,
-            "chemistry": 33,
-            "physics": 96
+            "chemistry": 63,
+            "physics": 66
             },
             "term2_scores": {
             "math": 94,
             "english": 71,
             "history": 75,
-            "chemistry": 0,
-            "physics": 18
+            "chemistry": 70,
+            "physics": 28
             },
             "term3_scores": {
             "math": 90,
-            "english": 13,
+            "english": 83,
             "history": 45,
-            "chemistry": 100,
-            "physics": 17
+            "chemistry": 70,
+            "physics": 70
             },
             "term4_scores": {
             "math": 66,
             "english": 43,
             "history": 47,
-            "chemistry": 1,
+            "chemistry": 60,
             "physics": 40
             }
         }, 
@@ -171,21 +171,21 @@ export const students = {
             "term2_scores": {
             "math": 91,
             "english": 65,
-            "history": 1,
+            "history": 50,
             "chemistry": 62,
             "physics": 83
             },
             "term3_scores": {
             "math": 97,
             "english": 60,
-            "history": 4,
+            "history": 54,
             "chemistry": 23,
-            "physics": 11
+            "physics": 71
             },
             "term4_scores": {
             "math": 80,
             "english": 80,
-            "history": 26,
+            "history": 60,
             "chemistry": 43,
             "physics": 72
             }
@@ -429,24 +429,24 @@ export const students = {
             "address": "134 Moyale",
             "term1_scores": {
             "math": 70,
-            "english": 0,
-            "history": 3,
+            "english": 20,
+            "history": 50,
             "chemistry": 14,
             "physics": 69
             },
             "term2_scores": {
             "math": 73,
-            "english": 0,
+            "english": 40,
             "history": 72,
             "chemistry": 22,
-            "physics": 2
+            "physics": 52
             },
             "term3_scores": {
             "math": 83,
             "english": 34,
-            "history": 11,
+            "history": 51,
             "chemistry": 88,
-            "physics": 26
+            "physics": 56
             },
             "term4_scores": {
             "math": 48,
@@ -515,7 +515,7 @@ export const students = {
             "english": 68,
             "history": 28,
             "chemistry": 58,
-            "physics": 4
+            "physics": 54
             },
             "term3_scores": {
             "math": 76,
@@ -528,7 +528,7 @@ export const students = {
             "math": 49,
             "english": 49,
             "history": 17,
-            "chemistry": 2,
+            "chemistry": 92,
             "physics": 75
             }
         }, 
