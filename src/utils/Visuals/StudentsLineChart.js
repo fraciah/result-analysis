@@ -43,6 +43,7 @@ export const lineChartOptions = {
         y: {
         min: 0, 
         max: 100 
-    }
+    },
+    maintainAspectRatio: false,
 }
 };

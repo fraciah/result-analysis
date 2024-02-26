@@ -54,7 +54,8 @@ export const options={
         min: 0,
         max: 100
       }
-    }
+    },
+    maintainAspectRatio: false,
 }
 
 //export each average score

@@ -26,7 +26,7 @@ const Home = () => {
   }
   
   return (
-    <div className="container">
+    <div className="container pt-3">
       <p className="fw-bold blue fs-3 text-center">Grade 8 Analysis Dashboard</p>
       <div className="text-center px-4">
         <p>
@@ -43,11 +43,11 @@ const Home = () => {
         <div className="row my-5">
           <div className="col-lg-6 col-md-12 chart-container">
             <h5 className="text-center mb-4">Gender Distribution</h5>
-            <div className="col-12 col-md-10 col-lg-8 mx-auto"> 
-            <Pie data={genderData} />
+            <div className="col-12 col-md-10 col-lg-8 mx-auto d-flex justify-content-center align-items-center pie"> 
+              <Pie data={genderData} />
+            </div>
           </div>
-          </div>
-          <div className="col-lg-6 col-md-12"> 
+          <div className="col-lg-6 col-md-12 chart-container"> 
             <div className="align-items-center">
               <h5 className="text-center mb-4">Average Scores by Term</h5>
               <div className="d-flex align-items-center justify-content-center mb-2">
@@ -71,7 +71,7 @@ const Home = () => {
           <div className="row">
             {subjects.map(subject => {
               return (
-                  <div key={subject} className="col-lg-4 col-md-6 col-sm-12 mb-4">
+                  <div key={subject} className="col-lg-4 col-md-6 col-sm-12 mb-4 line-chart-container">
                     <Line key={subject} data={getLineChartData(subject)} options={lineChartOptions} />
                   </div>
                 );
