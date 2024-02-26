@@ -1,37 +1,41 @@
 const Footer = () => {
   return (
-    <footer className="footer bg-body-secondary mt-5">
+    <footer className="footer bg-body-secondary mt-5 d-flex flex-column justify-content-center align-items-center">
       <div className="p-4">
         <div className="row">
-          <div className="col-lg-6 col-md-6 mb-4 mb-md-0">
-            <h5 className="blue">About Grade 8 Analysis</h5>
-            <p>
+          <div className="col-lg-5 col-md-12 mb-4 mb-md-0">
+            <h5 className="blue mb-3">About Grade 8 Analysis</h5>
+            <p className="lh-5">
               This platform provides a comprehensive view of Grade 8 student performance. Explore various charts that depict the overall performance of individual and all Grade 8 students.
             </p>
-            <div>
-              Copyright © ResultAnalysis | All rights reserved
-            </div>
           </div>
 
           <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 className="blue">Information</h5>
+            <h5 className="blue mb-3">Information</h5>
             <ul className="list-unstyled">
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
+              <li className="mb-2">Terms & Conditions</li>
+              <li className="mb-2">Privacy Policy</li>
               <li>Contact Us</li>
             </ul>
           </div>
 
-          <div className="col-lg-3 col-md-6">
-          <h5 className="blue">Subscription</h5>
-          <div className="input-group mb-3">
-            <input type="email" className="form-control" placeholder="Your email" />
-            <button className="btn btn-primary ml-2" type="submit">Subscribe</button>
+          <div className="col-lg-4 col-md-6">
+            <h5 className="blue mb-3">Follow Us</h5>
+            <div className="d-flex gap-4 my-4">
+              <i className="fab fa-facebook-f fs-4"></i>
+              <i className="fa-brands fa-x-twitter fs-4"></i>
+              <i className="fab fa-instagram fs-4"></i>
+            </div>
           </div>
         </div>
+        <div className="row mt-4">
+          <div className="col-12 text-center">
+            Copyright © ResultAnalysis | All rights reserved
+          </div>
         </div>
       </div>
     </footer>
   )
 }
+
 export default Footer;
