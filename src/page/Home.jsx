@@ -67,7 +67,7 @@ const Home = () => {
         </div>
 
         <div>
-          <h5 className="text-center mb-4">Subject Score Progression Over Terms</h5>
+          <h5 className="text-center mb-4">Average Subject Score Progression Over Terms</h5>
           <div className="row">
             {subjects.map(subject => {
               return (
