@@ -90,14 +90,14 @@ export const students = {
             "english": 71,
             "history": 14,
             "chemistry": 94,
-            "physics": 13
+            "physics": 80
             },
             "term2_scores": {
             "math": 58,
             "english": 75,
             "history": 9,
             "chemistry": 12,
-            "physics": 28
+            "physics": 78
             },
             "term3_scores": {
             "math": 6,
@@ -127,7 +127,7 @@ export const students = {
             "math": 18,
             "english": 46,
             "history": 38,
-            "chemistry": 93,
+            "chemistry": 73,
             "physics": 66
             },
             "term2_scores": {
@@ -141,11 +141,11 @@ export const students = {
             "math": 37,
             "english": 92,
             "history": 61,
-            "chemistry": 9,
+            "chemistry": 59,
             "physics": 90
             },
             "term4_scores": {
-            "math": 77,
+            "math": 40,
             "english": 33,
             "history": 45,
             "chemistry": 71,
@@ -245,24 +245,24 @@ export const students = {
             "physics": 97
             },
             "term2_scores": {
-            "math": 7,
+            "math": 17,
             "english": 95,
             "history": 36,
-            "chemistry": 98,
+            "chemistry": 38,
             "physics": 21
             },
             "term3_scores": {
             "math": 18,
             "english": 27,
             "history": 79,
-            "chemistry": 78,
+            "chemistry": 58,
             "physics": 19
             },
             "term4_scores": {
-            "math": 74,
+            "math": 54,
             "english": 50,
             "history": 79,
-            "chemistry": 20,
+            "chemistry": 60,
             "physics": 22
             }
         }, 
@@ -278,14 +278,14 @@ export const students = {
             "term1_scores": {
             "math": 26,
             "english": 83,
-            "history": 14,
+            "history": 54,
             "chemistry": 30,
             "physics": 74
             },
             "term2_scores": {
             "math": 49,
             "english": 42,
-            "history": 81,
+            "history": 71,
             "chemistry": 50,
             "physics": 40
             },
@@ -299,7 +299,7 @@ export const students = {
             "term4_scores": {
             "math": 53,
             "english": 68,
-            "history": 7,
+            "history": 80,
             "chemistry": 82,
             "physics": 98
             }
@@ -318,7 +318,7 @@ export const students = {
             "english": 62,
             "history": 82,
             "chemistry": 84,
-            "physics": 31
+            "physics": 75
             },
             "term2_scores": {
             "math": 57,
@@ -332,7 +332,7 @@ export const students = {
             "english": 36,
             "history": 84,
             "chemistry": 94,
-            "physics": 26
+            "physics": 66
             },
             "term4_scores": {
             "math": 81,
@@ -373,9 +373,9 @@ export const students = {
             "physics": 52
             },
             "term4_scores": {
-            "math": 20,
+            "math": 90,
             "english": 98,
-            "history": 9,
+            "history": 90,
             "chemistry": 58,
             "physics": 69
             }
@@ -394,10 +394,10 @@ export const students = {
             "english": 83,
             "history": 37,
             "chemistry": 96,
-            "physics": 6
+            "physics": 40
             },
             "term2_scores": {
-            "math": 16,
+            "math": 76,
             "english": 84,
             "history": 59,
             "chemistry": 78,
@@ -445,7 +445,7 @@ export const students = {
             "math": 83,
             "english": 34,
             "history": 51,
-            "chemistry": 88,
+            "chemistry": 58,
             "physics": 56
             },
             "term4_scores": {
@@ -468,28 +468,28 @@ export const students = {
             "term1_scores": {
             "math": 51,
             "english": 82,
-            "history": 15,
-            "chemistry": 10,
+            "history": 65,
+            "chemistry": 40,
             "physics": 100
             },
             "term2_scores": {
             "math": 65,
             "english": 51,
             "history": 75,
-            "chemistry": 75,
+            "chemistry": 45,
             "physics": 63
             },
             "term3_scores": {
             "math": 60,
             "english": 82,
-            "history": 32,
+            "history": 62,
             "chemistry": 37,
             "physics": 93
             },
             "term4_scores": {
             "math": 48,
             "english": 12,
-            "history": 41,
+            "history": 70,
             "chemistry": 37,
             "physics": 32
             }
@@ -549,18 +549,18 @@ export const students = {
             "physics": 51
             },
             "term2_scores": {
-            "math": 6,
+            "math": 16,
             "english": 37,
             "history": 64,
             "chemistry": 11,
             "physics": 33
             },
             "term3_scores": {
-            "math": 2,
+            "math": 42,
             "english": 85,
             "history": 16,
             "chemistry": 48,
-            "physics": 7
+            "physics": 57
             },
             "term4_scores": {
             "math": 43,
@@ -591,17 +591,17 @@ export const students = {
             "english": 52,
             "history": 74,
             "chemistry": 13,
-            "physics": 32
+            "physics": 82
             },
             "term3_scores": {
-            "math": 96,
+            "math": 70,
             "english": 9,
             "history": 48,
-            "chemistry": 79,
-            "physics": 11
+            "chemistry": 49,
+            "physics": 90
             },
             "term4_scores": {
-            "math": 5,
+            "math": 79,
             "english": 42,
             "history": 61,
             "chemistry": 29,
@@ -626,7 +626,7 @@ export const students = {
             },
             "term2_scores": {
             "math": 46,
-            "english": 14,
+            "english": 74,
             "history": 57,
             "chemistry": 68,
             "physics": 16
@@ -640,7 +640,7 @@ export const students = {
             },
             "term4_scores": {
             "math": 83,
-            "english": 5,
+            "english": 75,
             "history": 75,
             "chemistry": 90,
             "physics": 34
@@ -666,21 +666,21 @@ export const students = {
                 "math": 70,
                 "english": 84,
                 "history": 68,
-                "chemistry": 92,
+                "chemistry": 72,
                 "physics": 41
             },
             "term3_scores": {
                 "math": 53,
                 "english": 79,
                 "history": 25,
-                "chemistry": 39,
+                "chemistry": 79,
                 "physics": 85
             },
             "term4_scores": {
                 "math": 68,
                 "english": 46,
                 "history": 67,
-                "chemistry": 12,
+                "chemistry": 82,
                 "physics": 93
             }
         },
@@ -705,21 +705,21 @@ export const students = {
                 "english": 70,
                 "history": 45,
                 "chemistry": 78,
-                "physics": 16
+                "physics": 56
             },
             "term3_scores": {
                 "math": 89,
                 "english": 56,
                 "history": 73,
                 "chemistry": 34,
-                "physics": 90
+                "physics": 80
             },
             "term4_scores": {
                 "math": 77,
                 "english": 82,
                 "history": 84,
                 "chemistry": 59,
-                "physics": 48
+                "physics": 58
             }
         },
         {
