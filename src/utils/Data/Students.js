@@ -204,26 +204,26 @@ export const students = {
             "english": 78,
             "history": 43,
             "chemistry": 76,
-            "physics": 100
+            "physics": 70
             },
             "term2_scores": {
             "math": 96,
             "english": 58,
             "history": 63,
             "chemistry": 79,
-            "physics": 39
+            "physics": 69
             },
             "term3_scores": {
             "math": 68,
             "english": 43,
             "history": 91,
-            "chemistry": 12,
-            "physics": 0
+            "chemistry": 52,
+            "physics": 75
             },
             "term4_scores": {
             "math": 82,
             "english": 68,
-            "history": 17,
+            "history": 80,
             "chemistry": 24,
             "physics": 88
             }
