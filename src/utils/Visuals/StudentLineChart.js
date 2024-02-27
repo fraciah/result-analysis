@@ -6,7 +6,7 @@ export const getSubjectScores = (student, subject) => {
         labels: ['Term 1', 'Term 2', 'Term 3', 'Term 4'],
         datasets: [
             {
-                label: subject,
+                label: subject.charAt(0).toUpperCase() + subject.slice(1),
                 data: scores,
                 backgroundColor: '#36A2EB',
             }
