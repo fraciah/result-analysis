@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="container pt-3">
       <p className="fw-bold blue fs-3 text-center">Grade 8 Analysis Dashboard</p>
-      <div className="text-center px-4">
+      <div className="text-center px-4 pb-4 border-bottom">
         <p>
           Welcome to Grade 8 analysis. This platform provides a comprehensive view of student performance. Here, you can explore various charts that depict the overall performance of all Grade 8 students. Use the dropdown menu to select the term for which you want to view the average scores.
         </p> 
